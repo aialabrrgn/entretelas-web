@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+
+.header__img{
+    background-image: url(img/header_recorte.jpg);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 148px;
+    padding: 16px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.nav__menu
+
+.nav__item {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    width: 250px;
+}
+
