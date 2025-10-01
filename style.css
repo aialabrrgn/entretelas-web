@@ -40,6 +40,8 @@
     border: 1px solid var(--color-acento);
 }
 
+/* index.html */
+/* header index */
 .index__header{
     min-width: 100vw;
     min-height: 100vh;
@@ -86,7 +88,8 @@
 .header__logo {
     width: 316px;
 }
-
+/* 
+parte de buscador */
 .form__buscador{
     display: flex;
     justify-content: center;
@@ -110,7 +113,7 @@
     text-align: center;
     gap: 48px;
     padding: 48px;
-    margin-top: 224px;
+    margin-top: 124px;
 }
 
 .reserva__texto {
@@ -119,11 +122,14 @@
     color: var(--color-secundario);
 }
 
+/* secciones index */
 .home__secciones{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 32px;
+    justify-content: center;
+    padding-top: 32px;
+    width: 100vw;
+    gap: 16px;
 }
 
 .secciones{
@@ -131,8 +137,6 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-
-    width: 300px;
 }
 
 .seccion{
@@ -144,28 +148,19 @@
     gap: 8px;
 }
 
-.seccionFla {
+.seccionFla, .seccionEve, .seccionComple {
     background-image: url(img/seccionFla.jpg);
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 400px;
     height: 500px;
 }
-
 
 .seccionEve {
     background-image: url(img/seccionEve.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 500px;
 }
 .seccionComple {
-    background-image: url(img/seccionComple.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 500px;
+    background-image: url(img/seccionComple2.jpg);
 }
 
 .seccion__tiutlo {
@@ -175,6 +170,16 @@
     text-align: end;
 }
 
+/* footer index */
 
-
-
+.footer{
+    background-color: var(--color-secundario);
+    padding: 8px;
+    width: 100%;
+    margin-top: 32px;
+}
+.footer__texto {
+    text-align: center;
+    font-family: var(--font-sec-regular);
+    color: var(--color-acento);
+}
