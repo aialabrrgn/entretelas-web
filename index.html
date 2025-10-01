@@ -11,25 +11,64 @@
 <body>
     <header>
         <div class="index__header">
-            <div class="header__img">                    
-                <div class="nav__img"><img class="header__logo" src="img/logo.png" alt=""></div>
-                <nav class="nav__menu">
-                    <span class="nav__item">Moda flamenca</span>
-                    <span class="nav__item">Moda eventos</span>
-                    <span class="nav__item">Complementos</span>
-                    <span class="nav__item">Contacto <a href="contacto.html"></a></span>
-                </nav>
-                <form class="buscador">
-                    <input type="search">
-                </form>
-                <h1>Tu vestido de flamenca de ensueño a medida</h1>
-                <button class="boton__reservar"><a href="contacto.html"></a>Reserva cita</button>
+            <div class="header__img">
+                <div class="header__img--opacidad">
+                    <nav class="nav__menu">
+                        <div class="nav__img"><img class="header__logo" src="img/logo.png" alt=""></div>
+                        <div class="nav__apartados">
+                            <span class="nav__item">Moda flamenca</span>
+                            <span class="nav__item">Moda eventos</span>
+                            <span class="nav__item">Complementos</span>
+                            <span class="nav__item">Contacto <a href="contacto.html"></a></span>
+                        </div>
+                    </nav>
+                    <form class="form__buscador">
+                        <input class="buscador" type="search">
+                    </form>
+                    <div class="header__reserva">
+                        <h1 class="reserva__texto">Tu vestido de flamenca de<br> ensueño a medida</h1>
+
+                        <form class="form_btn">
+                            <button class="btn reserva__btn"><a href="contacto.html"></a>Reserva cita</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
     <main>
 
+        <div class="home__secciones">
+            <div class="secciones seccionFla">
+                <div class="seccion">
+                    <h3 class="seccion__tiutlo seccionFla__titulo">Moda flamenca</h3>
+                    <form class="form_btn">
+                        <button class="btn reserva__btn"><a href="contacto.html"></a>Ver más</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="secciones seccionEve">
+                <div class="seccion">
+                    <h3 class="seccion__tiutlo seccionFla__titulo">Moda eventos</h3>
+                    <form class="form_btn">
+                        <button class="btn reserva__btn"><a href="contacto.html"></a>Ver más</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="secciones seccionComple">
+                <div class="seccion">
+                    <h3 class="seccion__tiutlo seccionFla__titulo">Complementos </h3>
+                    <form class="form_btn">
+                        <button class="btn reserva__btn"><a href="contacto.html"></a>Ver más</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
 
     </footer>
