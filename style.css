@@ -42,7 +42,7 @@
 
 /* index.html */
 /* header index */
-.index__header{
+.header{
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -88,6 +88,7 @@
 .header__logo {
     width: 316px;
 }
+
 /* 
 parte de buscador */
 .form__buscador{
@@ -175,7 +176,7 @@ parte de buscador */
 .footer{
     background-color: var(--color-secundario);
     padding: 8px;
-    width: 100%;
+    min-width: 100%;
     margin-top: 32px;
 }
 .footer__texto {
