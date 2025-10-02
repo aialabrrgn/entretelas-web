@@ -197,3 +197,8 @@ parte de buscador */
     font-family: var(--font-sec-regular);
     color: var(--color-acento);
 }
+
+:hover .seccionFla__titulo {
+    color: var(--color-principal);
+    transition: 0.5s;
+}
