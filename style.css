@@ -122,7 +122,7 @@ parte de buscador */
 /* secciones index */
 .home__secciones{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     padding: 32px;
     gap: 16px;
@@ -139,24 +139,40 @@ parte de buscador */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
-    padding: 16px;    
+    justify-content: flex-end; 
+    gap: 4px;
+}
+
+.titulo__opacidad{
+    width: 250px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end; 
     gap: 8px;
 }
 
+
 .seccionFla, .seccionEve, .seccionComple {
-    background-image: url(img/seccionFla.jpg);
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
+}
+
+.seccionFla {
+    background-image: url(img/seccionFla2.png);
 }
 
 .seccionEve {
-    background-image: url(img/seccionEve.jpg);
+    background-image: url(img/eventos.jpg);
 }
+
 .seccionComple {
-    background-image: url(img/seccionComple2.jpg);
+    background-image: url(img/complementos.jpg);
 }
 
 .seccion__tiutlo {
@@ -173,7 +189,6 @@ parte de buscador */
     background-color: var(--color-secundario);
     padding: 8px;
     min-width: 100%;
-    margin-top: 32px;
 }
 
 
