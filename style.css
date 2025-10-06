@@ -43,11 +43,22 @@
     background-color: var(--color-acento);
     color: var(--color-secundario);
     border: 1px solid var(--color-acento);
-}
-
-:root .btn__texto {
     text-decoration: none;
     color: var(--color-secundario);
+}
+
+:root .btn {
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    border: var(--color-acento);
+}
+
+
+:hover .btn__compra {
+    background-color: var(--color-secundario);
+    color: var(--color-acento);
+    border: var(--color-secundario);
+    transition: 0.3s ease;
 }
 
 /* index */
@@ -198,12 +209,13 @@ parte de buscador */
 }
 
 
-/* footer index */
+/* footer general */
 
 .footer {
     background-color: var(--color-secundario);
     padding: 8px;
     min-width: 100%;
+    z-index: 1;
 }
 
 
@@ -242,7 +254,8 @@ parte de buscador */
 .nav__apartados--items{
     width: 60%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     gap: 108px;
 }
 
@@ -250,10 +263,10 @@ parte de buscador */
 
 .grid__detalle {
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    /* grid-row: 1fr; */
-    min-height: 100vh;
-    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    margin-bottom: 8px;
 }
 
 .detalle__img1{
@@ -262,12 +275,12 @@ parte de buscador */
 }
 .detalle__img2{
     grid-column: 2 / 3;
-    /* grid-row: 1 / 2; */
+    grid-row: 1 / 2;
 }
 
 .detalle__info{
     grid-column: 3 /4;
-    /* grid-row: 1 / 2; */
+    grid-row: 1 / 2;
 }
 
 .detalle__info{
@@ -275,4 +288,37 @@ parte de buscador */
     flex-direction: column;
     padding: 16px;
     margin-top: 224px;
+}
+
+/* detalle info  */
+
+.detalle__info{
+    font-family: var(--font-sec-bold);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.info__precio{
+    margin-top: 8px;
+}
+
+.talla {
+    margin: 4px;
+    padding: 8px;
+    border: 1px, solid, var(--color-acento);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+.btn__compra{
+    text-align: center;
+    margin-top: 16px;
+    color: var(--color-secundario);
+    text-decoration: none;
 }
