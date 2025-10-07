@@ -45,21 +45,16 @@
     border: 1px solid var(--color-acento);
     text-decoration: none;
     color: var(--color-secundario);
+    font-family: var(--font-sec-regular);
 }
 
-:root .btn {
-    background-color: var(--color-acento);
-    color: var(--color-secundario);
-    border: var(--color-acento);
-}
-
-
-:hover .btn__compra {
+.btn:hover  {
     background-color: var(--color-secundario);
     color: var(--color-acento);
     border: var(--color-secundario);
     transition: 0.3s ease;
 }
+
 
 /* index */
 /* header index */
@@ -143,6 +138,8 @@ parte de buscador */
     color: var(--color-secundario);
 }
 
+
+
 /* secciones index */
 .home__secciones {
     display: flex;
@@ -225,9 +222,7 @@ parte de buscador */
     color: var(--color-acento);
 }
 
-/* .seccionFla__titulo :hover  {
-    transform: scale(1.1);
-} */
+
 
 /* detalle producto*/
 /* header secundario*/
@@ -322,3 +317,29 @@ parte de buscador */
     color: var(--color-secundario);
     text-decoration: none;
 }
+
+/* contacto  */
+
+.contacto__titulo{
+    font-family: var(--font-sec-bold);
+}
+
+
+
+.buscador__contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 82px;
+}
+.form__buscador--contacto {
+    width: 70%;
+    height: 32px;
+    border-radius: 8px;
+    background-color: rgba(194, 19, 19, 0.71);
+    border: rgba(255, 255, 255, 0.71);
+}
+
+
+
+
