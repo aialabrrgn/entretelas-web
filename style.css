@@ -48,7 +48,7 @@
     font-family: var(--font-sec-regular);
 }
 
-.btn:hover  {
+.btn:hover {
     background-color: var(--color-secundario);
     color: var(--color-acento);
     border: var(--color-secundario);
@@ -83,7 +83,7 @@
     background-color: rgba(255, 255, 255, 0.76);
 }
 
-.nav__apartados{
+.nav__apartados {
     display: flex;
     align-items: center;
     gap: 108px;
@@ -98,7 +98,8 @@
 .header__logo {
     width: 316px;
 }
-.nav__item{
+
+.nav__item {
     text-decoration: none;
     color: var(--color-acento);
 }
@@ -229,7 +230,7 @@ parte de buscador */
 .nav2__menu {
     width: 100%;
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
     padding: 32px;
     background-color: white;
@@ -241,11 +242,12 @@ parte de buscador */
     width: 40%;
 
 }
-.header2__logo--img{
+
+.header2__logo--img {
     width: 316px;
 }
 
-.nav__apartados--items{
+.nav__apartados--items {
     width: 60%;
     display: flex;
     align-items: center;
@@ -263,21 +265,22 @@ parte de buscador */
     margin-bottom: 8px;
 }
 
-.detalle__img1{
+.detalle__img1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
-.detalle__img2{
+
+.detalle__img2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.detalle__info{
+.detalle__info {
     grid-column: 3 /4;
     grid-row: 1 / 2;
 }
 
-.detalle__info{
+.detalle__info {
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -286,7 +289,7 @@ parte de buscador */
 
 /* detalle info  */
 
-.detalle__info{
+.detalle__info {
     font-family: var(--font-sec-bold);
     display: flex;
     flex-direction: column;
@@ -295,7 +298,7 @@ parte de buscador */
     margin-right: 16px;
 }
 
-.info__precio{
+.info__precio {
     margin-top: 8px;
 }
 
@@ -310,7 +313,7 @@ parte de buscador */
     text-decoration: none;
 }
 
-.btn__compra{
+.btn__compra {
     text-align: center;
     margin-top: 16px;
     color: var(--color-secundario);
@@ -319,23 +322,158 @@ parte de buscador */
 
 /* contacto  */
 
-.contacto__titulo{
+/* reserva cita  */
+.reserva__contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+    margin: 44px;
+}
+
+
+.reserva__contacto--img {
+    height: 350px;
+}
+
+.resContacto__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    font-family: var(--font-sec-bold);
+    text-align: left;
+}
+
+.resContacto__texto--titulo {
+    font-size: 36px;
+}
+
+.resContacto__texto--sub {
+    font-size: 24px;
+}
+
+.resContacto__text--telf {
+    font-size: 24px;
+    color: var(--color-secundario);
+    background-color: var(--color-acento);
+    padding: 16px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* ubicacion  */
+
+.ubicacion__contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 32px; */
+    margin: 44px;
+}
+
+.ubicacion__contacto--texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
     font-family: var(--font-sec-bold);
 }
 
-/* .ubicacion__img{
-    background-image: url(img/ubicacion.jpg);
-    width: 1000px;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.ubicacion__contacto--titulo {
+    font-size: 36px;
+}
+
+.ubicacion__contacto--direccion {
+    font-size: 24px;
+}
+
+.ubicacion__contacto--llegar {
+    font-size: 16px;
+    color: var(--color-secundario);
+    background-color: var(--color-acento);
+    padding: 16px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+/* horario  */
+
+.horario__contacto{
     display: flex;
-    justify-content: center;
+    /* justify-content: space-around;
+    align-items: center; */
+    gap: 16px;
+    margin: 84px;
+}
 
-} */
+.horario__titulo{
+    font-size: 36px;
+    font-family: var(--font-sec-bold);
+}
 
+.grid__horario{
+    display: grid;
+    grid-template:repeat(7, 1fr) / repeat(2, 1fr);
+    font-family: var(--font-sec-regular);
+    color: gray;
+    width: 32%;
+}
 
-
-
-
+.item1 {
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2;
+}
+.item2 {
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 2;
+}
+.item3 {
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+}
+.item4 {
+    grid-column: 2 /3 ;
+    grid-row: 2 / 3;
+}
+.item5 {
+    grid-column: 1 / 2 ;
+    grid-row: 3 / 4;
+}
+.item6 {
+    grid-column: 2 /3 ;
+    grid-row: 3 / 4;
+}
+.item7 {
+    grid-column: 1 / 2 ;
+    grid-row: 4 / 5;
+}
+.item8 {
+    grid-column: 2 /3 ;
+    grid-row: 4 / 5;
+}
+.item9 {
+    grid-column: 1 / 2 ;
+    grid-row: 5 / 6;
+}
+.item10 {
+    grid-column: 2 /3 ;
+    grid-row: 5 / 6;
+}
+.item11 {
+    grid-column: 1 / 2 ;
+    grid-row: 6 / 7;
+}
+.item12 {
+    grid-column: 2 /3 ;
+    grid-row: 6 / 7;
+}
+.item13 {
+    grid-column: 1 / 2 ;
+    grid-row: 7 / 8;
+}
+.item14 {
+    grid-column: 2 /3 ;
+    grid-row: 7 / 8;
+}
 
