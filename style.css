@@ -61,7 +61,6 @@
 
 .header__img {
     background-image: url(img/header_recorte.jpg);
-
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -324,21 +323,18 @@ parte de buscador */
     font-family: var(--font-sec-bold);
 }
 
-
-
-.buscador__contacto {
+/* .ubicacion__img{
+    background-image: url(img/ubicacion.jpg);
+    width: 1000px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-}
-.form__buscador--contacto {
-    width: 70%;
-    height: 32px;
-    border-radius: 8px;
-    background-color: rgba(194, 19, 19, 0.71);
-    border: rgba(255, 255, 255, 0.71);
-}
+
+} */
+
+
 
 
 
