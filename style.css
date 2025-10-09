@@ -221,6 +221,35 @@ parte de buscador */
     text-align: end;
 }
 
+.contacto--link {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto--link-img {
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 200px;
+    right: 40px;
+}
+
+.contacto--link-text {
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    padding: 16px;
+    position: fixed;
+    bottom: 142px;
+    right: 40px;
+    border-radius: 16px;
+    font-family: var(--font-sec-regular);
+    text-decoration: none;
+}
+
+.contacto--link :hover {
+    background-color: var(--color-secundario);
+    color: var(--color-acento);
+}
 
 /* footer general */
 
@@ -242,7 +271,7 @@ parte de buscador */
 
 @media(max-width: 425px) {
     .reserva__texto {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .header__img {
@@ -268,12 +297,14 @@ parte de buscador */
         width: 390px;
         height: 190px;
     }
-    .seccion__tiutlo{
+
+    .seccion__tiutlo {
         font-size: 16px;
     }
+
     .titulo__opacidad {
-    width: 170px;
-    height: 52px;
+        width: 170px;
+        height: 52px;
     }
 }
 
@@ -289,7 +320,6 @@ parte de buscador */
     background-color: white;
     background-color: var(--color-secundario-opacidad);
 }
-
 
 .header2__logo {
     width: 40%;
@@ -366,6 +396,11 @@ parte de buscador */
     text-decoration: none;
 }
 
+.talla:hover {
+    color: var(--color-principal);
+    border: 1px, solid, var(--color-principal);
+}
+
 .btn__compra {
     text-align: center;
     margin-top: 16px;
@@ -373,24 +408,62 @@ parte de buscador */
     text-decoration: none;
 }
 
-@media(max-width: 425px) {
-    .ordenador__detalle{
+@media (min-width: 500px) {
+    .movil__detalle {
         display: none;
     }
-    .movil__detalle{
+}
+
+@media(max-width: 425px) {
+    .ordenador__detalle {
+        display: none;
+    }
+
+    .movil__detalle {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-sec-bold);
+    }
+
+    .grid__detalle {
         display: flex;
         flex-direction: column;
     }
-    .grid__detalle{
+
+    .detalle__imagenes {
         display: flex;
         flex-direction: column;
     }
-    .detalle__imagenes{
+
+    .detalle__img1,
+    .detalle__img2 {
+        width: 445px;
+    }
+
+    .producto__info {
         display: flex;
         flex-direction: column;
+        gap: 8px;
+        background-color: white;
+        padding: 16px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
     }
-    .detalle__img1, .detalle__img2{
-    width: 445px;
+
+    .producto__info--2 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        background-color: white;
+        padding: 24px;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+
+    .boton__compra {
+        margin-top: 42px;
     }
 }
 
@@ -401,27 +474,38 @@ parte de buscador */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-principal);
+    background-image: url(img/contacto-img-horizontal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
-.contenedor {
-    width: 85%;
-    background-color: rgba(255, 255, 255, 0.835);
-    padding: 32px;
+/* .fondo {
+    padding: 64px;
     display: flex;
     justify-content: center;
-    gap: 32px;
-    font-family: var(--font-sec-bold);
+    align-items: center;
+    background-color: var(--color-principal);
+} */
+
+.contenedor {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.835);
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
     border-radius: 16px;
+    
 }
 
 .info {
-    width: 70%;
-
+    width: 80%;
 }
 
 .contenedor__img {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: flex-end;
 }
@@ -437,11 +521,13 @@ parte de buscador */
 .reserva__titulo,
 .ubicacion__titulo,
 .horario__titulo {
+    font-family: var(--font-sec-bold);
     font-size: 28px;
 }
 
 .reserva__sub,
 .ubicacion__direccion {
+    font-family: var(--font-sec-regular);
     font-size: 20px;
 }
 
@@ -468,7 +554,15 @@ parte de buscador */
     margin-bottom: 32px;
 }
 
+.ubiContacto--maps{
+    width: 100%;
+}
+
 /* horario  */
+.horario{
+    width: 50%;
+}
+
 .grid__horario {
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(2, 1fr);
@@ -476,6 +570,8 @@ parte de buscador */
     color: gray;
     width: 40%;
     margin-top: 8px;
+    width: 100%;
+
 }
 
 .item1 {
@@ -548,15 +644,18 @@ parte de buscador */
     grid-row: 7 / 8;
 }
 
-
-/* img contacto  */
-
-.contenedor__img {
-    display: flex;
-    align-items: center;
-}
-
-.img__contacto {
-    height: 600px;
-    border-radius: 16px;
+@media (max-width: 425px){
+    .ubiContacto--maps{
+        display: none;
+    }
+    .reserva__titulo, .ubicacion__titulo, .horario__titulo{
+        font-size: 24px;
+    }
+    .reserva__sub, .ubicacion__direccion{
+        font-size: 16px;
+    }
+    .grid__horario{
+        font-size: 12px;
+        gap: 8px;
+    }
 }
