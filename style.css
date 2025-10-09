@@ -327,33 +327,68 @@ parte de buscador */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-principal);
 }
 
 .contenedor {
-    width: 80%;
-    background-color: var(--color-secundario);
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.835);
     padding: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-family: var(--font-sec-bold);
+    border-radius: 16px;
 }
 
-.info
+.info {
+    width: 70%;
+    
+}
+
+.contenedor__img {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* reserva */
 .reserva {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.reserva__titulo, .ubicacion__titulo, .horario__titulo {
+    font-size: 28px;
+}
+
+.reserva__sub, .ubicacion__direccion{
+    font-size: 20px;
+}
+
+.reserva__telf, .ubicacion__contacto--llegar{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    border: 1px solid var(--color-acento);
+    text-decoration: none;
+    color: var(--color-secundario);
     font-family: var(--font-sec-bold);
+    margin-top: 16px;
 }
-
-.reserva__titulo{
-    font-size: 32px;
-}
-
 
 /* ubicacion  */
 
-
-
-
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
 
 /* horario  */
 .grid__horario {
@@ -362,7 +397,7 @@ parte de buscador */
     font-family: var(--font-sec-regular);
     color: gray;
     width: 40%;
-    margin-bottom: 44px;
+    margin-top: 8px;
 }
 
 .item1 {
@@ -433,4 +468,17 @@ parte de buscador */
 .item14 {
     grid-column: 2 /3;
     grid-row: 7 / 8;
+}
+
+
+/* img contacto  */
+
+.contenedor__img{
+    display: flex;
+    align-items: center;
+}
+
+.img__contacto {
+    height: 600px;
+    border-radius: 16px;
 }
