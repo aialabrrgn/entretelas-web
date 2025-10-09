@@ -322,94 +322,40 @@ parte de buscador */
 
 /* contacto  */
 
-/* reserva cita  */
-.reserva__contacto {
+.fondo {
+    padding: 64px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
+}
+
+.contenedor {
+    width: 80%;
+    background-color: var(--color-secundario);
     padding: 32px;
 }
 
+.info
 
-.reserva__contacto--img {
-    height: 350px;
-}
-
-.resContacto__texto {
+/* reserva */
+.reserva {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
     font-family: var(--font-sec-bold);
-    text-align: left;
 }
 
-.resContacto__texto--titulo {
-    font-size: 36px;
+.reserva__titulo{
+    font-size: 32px;
 }
 
-.resContacto__texto--sub {
-    font-size: 24px;
-}
-
-.resContacto__text--telf {
-    font-size: 24px;
-    color: var(--color-secundario);
-    background-color: var(--color-acento);
-    padding: 16px;
-    border-radius: 16px;
-    text-align: center;
-}
 
 /* ubicacion  */
 
-.ubicacion__contacto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* gap: 32px; */
-    padding: 32px;
-    background-color: var(--color-secundario-opacidad);
-}
 
-.ubicacion__contacto--texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 36px;
-    font-family: var(--font-sec-bold);
-}
 
-.ubicacion__contacto--titulo {
-    font-size: 36px;
-}
 
-.ubicacion__contacto--direccion {
-    font-size: 24px;
-}
-
-.ubicacion__contacto--llegar {
-    font-size: 16px;
-    color: var(--color-secundario);
-    background-color: var(--color-acento);
-    padding: 16px;
-    border-radius: 16px;
-    text-decoration: none;
-}
 
 /* horario  */
-
-.horario__contacto {
-    margin-top: 44px;
-    margin-left: 182px;
-}
-
-.horario__titulo {
-    font-family: var(--font-sec-bold);
-    font-size: 36px;
-}
-
 .grid__horario {
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(2, 1fr);
