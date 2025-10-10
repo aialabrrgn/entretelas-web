@@ -492,7 +492,7 @@ parte de buscador */
 .contenedor {
     width: 90%;
     background-color: rgba(255, 255, 255, 0.835);
-    padding: 24px;
+    padding: 32px;
     display: flex;
     justify-content: space-around;
     gap: 24px;
@@ -559,9 +559,7 @@ parte de buscador */
 }
 
 /* horario  */
-.horario{
-    width: 50%;
-}
+
 
 .grid__horario {
     display: grid;
@@ -571,7 +569,6 @@ parte de buscador */
     width: 40%;
     margin-top: 8px;
     width: 100%;
-
 }
 
 .item1 {
@@ -657,5 +654,8 @@ parte de buscador */
     .grid__horario{
         font-size: 12px;
         gap: 8px;
+    }
+    .ubiContacto--maps{
+        display: none;
     }
 }
